@@ -109,6 +109,20 @@ GET /api/integrations/esp/lists/:id
 
 ## 🗄️ Database Schema
 
+Database Schema Overview:
+
+Integration Collection:
+
+- userId: String (required)
+- provider: String (enum: mailchimp, getresponse)
+- owner: Sring
+- apiKey: String (required)
+- meta: Object
+- validated: Boolean
+- lastValidatedAt: Date
+- isActive: Boolean
+- createdAt: Date
+
 ```js
 {
   provider: "mailchimp" | "getresponse",
